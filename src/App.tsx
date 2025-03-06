@@ -152,10 +152,7 @@ function App() {
                         />
                       </svg>
                     </a>
-                    <a
-                      href="https://github.com/abhoy21/mindsketch.git"
-                      target="_blank"
-                    >
+                    <a href="https://mindsketch.abhoy.xyz/" target="_blank">
                       <h3 className="text-gray-200 hover:text-gray-500">
                         MindSketch
                       </h3>
