@@ -97,7 +97,7 @@ function App() {
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-gray-500 text-sm">5 users</span>
+                  <span className="text-gray-500 text-sm">10 users</span>
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
               </div>
@@ -132,7 +132,7 @@ function App() {
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-gray-500 text-sm">6 users</span>
+                  <span className="text-gray-500 text-sm">8 users</span>
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
               </div>
@@ -163,7 +163,7 @@ function App() {
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-gray-500 text-sm">- - -</span>
+                  <span className="text-gray-500 text-sm">3 users</span>
                 </div>
               </div>
 
