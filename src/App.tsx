@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import GitHubCalendar from "react-github-calendar";
 import { Analytics } from "@vercel/analytics/react";
 
