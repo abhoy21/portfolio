@@ -85,7 +85,7 @@ function App() {
             <p>
               • You can have a look at my resume{" "}
               <a
-                href="https://drive.google.com/file/d/1_z9EI2aR3y9nWVS9S69_2j6Q0jBoeF7-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TIqVve8KvB76-q9ZANNl8AJ40tqq5iYP/view?usp=sharing"
                 target="_blank"
                 className="text-cyan-500"
               >
