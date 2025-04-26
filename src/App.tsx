@@ -7,7 +7,7 @@ function App() {
     <>
       <Analytics />
       <div className="min-h-screen bg-[#121212] text-gray-300 p-4 sm:p-6 md:p-8 lg:p-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
+        <div className="max-w-[72rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
           {/* Header */}
           <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <h1 className="text-2xl sm:text-3xl font-bold text-white">
@@ -103,6 +103,43 @@ function App() {
                 Resume
               </a>
             </p>
+          </div>
+
+          {/* Experience */}
+          <div className="my-12">
+            <h2 className="text-xl font-bold text-white mb-4">Experience</h2>
+            <div className="space-y-6">
+              <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-4 rounded-xl border border-gray-700">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                  <h3 className="text-lg font-medium text-white">CronLabs</h3>
+                  <span className="text-sm text-gray-400">Kolkata, WB</span>
+                </div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm text-cyan-400">SDE Intern</span>
+                  <span className="text-xs text-gray-500">
+                    January 2025 – March 2025
+                  </span>
+                </div>
+                <ul className="space-y-2 pl-5 list-disc text-sm text-gray-400">
+                  <li>
+                    Implemented responsive UI components using Next.js and
+                    TypeScript within a Monorepo architecture, enhancing
+                    development scalability across 3+ internal tools
+                  </li>
+                  <li>
+                    Crafted clean landing pages for local businesses using
+                    Next.js and Tailwind CSS, improving user engagement and
+                    reducing page load times
+                  </li>
+                  <li>
+                    Dockerized a Node.js application by designing and optimizing
+                    Dockerfiles, significantly reducing image size and build
+                    time, thereby streamlining CI/CD workflows and enhancing
+                    deployment efficiency
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Projects */}
@@ -279,7 +316,7 @@ function App() {
               <h2 className="text-xl font-bold text-white mb-4">
                 GitHub Contributions
               </h2>
-              <div className="w-full">
+              <div className="w-full rounded-lg border border-gray-700 bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-4">
                 <GitHubCalendar
                   username="abhoy21"
                   showWeekdayLabels
@@ -288,6 +325,9 @@ function App() {
                   blockSize={10}
                   blockRadius={4}
                   blockMargin={4}
+                  colorScheme="dark"
+                  fontSize={12}
+                  year={2025}
                 />
               </div>
             </div>
@@ -298,7 +338,7 @@ function App() {
 
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                 {/* Frontend */}
-                <div className="bg-neutral-800/40 p-3 rounded-xl border border-gray-700">
+                <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-3 rounded-xl border border-gray-700">
                   <h3 className="text-sm text-cyan-400 mb-2 font-medium">
                     Frontend
                   </h3>
@@ -322,7 +362,7 @@ function App() {
                 </div>
 
                 {/* Backend */}
-                <div className="bg-neutral-800/40 p-3 rounded-xl border border-gray-700">
+                <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-3 rounded-xl border border-gray-700">
                   <h3 className="text-sm text-green-400 mb-2 font-medium">
                     Backend
                   </h3>
@@ -340,7 +380,7 @@ function App() {
                 </div>
 
                 {/* Databases */}
-                <div className="bg-neutral-800/40 p-3 rounded-xl border border-gray-700">
+                <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-3 rounded-xl border border-gray-700">
                   <h3 className="text-sm text-purple-400 mb-2 font-medium">
                     Databases & ORM
                   </h3>
@@ -358,7 +398,7 @@ function App() {
                 </div>
 
                 {/* DevOps & Tools */}
-                <div className="bg-neutral-800/40 p-3 rounded-xl border border-gray-700">
+                <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-3 rounded-xl border border-gray-700">
                   <h3 className="text-sm text-amber-400 mb-2 font-medium">
                     DevOps
                   </h3>
@@ -379,7 +419,7 @@ function App() {
                 </div>
 
                 {/* Cloud Services */}
-                <div className="bg-neutral-800/40 p-3 rounded-xl border border-gray-700">
+                <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-3 rounded-xl border border-gray-700">
                   <h3 className="text-sm text-blue-400 mb-2 font-medium">
                     Cloud
                   </h3>
