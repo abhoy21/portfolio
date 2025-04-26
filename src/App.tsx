@@ -7,7 +7,7 @@ function App() {
     <>
       <Analytics />
       <div className="min-h-screen bg-[#121212] text-gray-300 p-4 sm:p-6 md:p-8 lg:p-16">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
           {/* Header */}
           <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <h1 className="text-2xl sm:text-3xl font-bold text-white">
@@ -20,7 +20,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className="w-5 h-5 text-blue-500 hover:text-white transition-colors" />
+                  <Linkedin className="w-4 h-4 text-blue-500 hover:text-white transition-colors" />
                 </a>
                 <a
                   href="https://github.com/abhoy21"
@@ -43,7 +43,7 @@ function App() {
                     textRendering="geometricPrecision"
                     viewBox="0 0 512 462.799"
                     fill="currentColor"
-                    className="w-5 h-5 hover:text-white transition-colors"
+                    className="w-4 h-4 hover:text-white transition-colors"
                   >
                     <path
                       fillRule="nonzero"
@@ -58,10 +58,8 @@ function App() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width={20}
-                    height={20}
                     viewBox="-2 -2 24 24"
-                    className="text-green-500 hover:text-white transition-colors"
+                    className="w-5 h-5 text-green-500 hover:text-white transition-colors"
                     fill="currentColor"
                   >
                     <path d="M9.516.012C4.206.262.017 4.652.033 9.929a9.798 9.798 0 0 0 1.085 4.465L.06 19.495a.387.387 0 0 0 .47.453l5.034-1.184a9.981 9.981 0 0 0 4.284 1.032c5.427.083 9.951-4.195 10.12-9.58C20.15 4.441 15.351-.265 9.516.011zm6.007 15.367a7.784 7.784 0 0 1-5.52 2.27 7.77 7.77 0 0 1-3.474-.808l-.701-.347-3.087.726.65-3.131-.346-.672A7.62 7.62 0 0 1 2.197 9.9c0-2.07.812-4.017 2.286-5.48a7.85 7.85 0 0 1 5.52-2.271c2.086 0 4.046.806 5.52 2.27a7.672 7.672 0 0 1 2.287 5.48c0 2.052-.825 4.03-2.287 5.481z" />
@@ -80,16 +78,29 @@ function App() {
           {/* Bio */}
           <div className="space-y-2 mb-8">
             <p>• I'm a full-stack engineer from India.</p>
-            <p>• Currently exploring Go</p>
+            {/* <p>• Currently exploring Go</p> */}
             <p>• Let's talk how we can work together!</p>
-            <p>
-              • You can have a look at my resume{" "}
+            <p className="flex items-center gap-2">
+              • You can have a look at my{" "}
               <a
-                href="https://drive.google.com/file/d/1TIqVve8KvB76-q9ZANNl8AJ40tqq5iYP/view?usp=sharing"
+                href="https://drive.google.com/file/d/1FbKnt4YLUuJ3AWAqyNX8DkRTKiXMcqBb/view?usp=sharing"
                 target="_blank"
-                className="text-cyan-500"
+                className="text-cyan-500 flex items-center gap-2"
               >
-                here
+                <span>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="12"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M339 314.9L175.4 32h161.2l163.6 282.9H339zm-137.5 23.6L120.9 480h310.5L512 338.5H201.5zM154.1 67.4L0 338.5 80.6 480 237 208.8 154.1 67.4z"></path>
+                  </svg>
+                </span>
+                Resume
               </a>
             </p>
           </div>
@@ -179,7 +190,10 @@ function App() {
                         />
                       </svg>
                     </a>
-                    <a href="https://mindsketch.abhoy.xyz/" target="_blank">
+                    <a
+                      href="https://github.com/abhoy21/mindsketch.git"
+                      target="_blank"
+                    >
                       <h3 className="text-gray-200 hover:text-gray-500">
                         MindSketch
                       </h3>
@@ -376,6 +390,9 @@ function App() {
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       Azure
                     </span>
+                    <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
+                      Digital Ocean
+                    </span>
                   </div>
                 </div>
               </div>
@@ -402,6 +419,17 @@ function App() {
                     Understanding the CAP theorem in Distributed Systems
                   </a>
                   <span className="text-gray-500 text-sm">Jan 02, 2025</span>
+                </div>
+
+                <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+                  <a
+                    href="https://medium.com/@sarkar.ab07/web-performance-tuning-real-world-tips-to-make-your-site-blazing-fast-25170ff97cc5"
+                    className="text-white hover:text-gray-500 text-sm sm:text-base"
+                  >
+                    Web Performance Tuning: Real-World Tips to Make Your Site
+                    Blazing Fast 🚀
+                  </a>
+                  <span className="text-gray-500 text-sm">Apr 24, 2025</span>
                 </div>
               </div>
             </div>
