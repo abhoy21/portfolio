@@ -83,7 +83,7 @@ function App() {
             <p className="flex items-center gap-2">
               • You can have a look at my{" "}
               <a
-                href="https://drive.google.com/file/d/1FbKnt4YLUuJ3AWAqyNX8DkRTKiXMcqBb/view?usp=sharing"
+                href="https://drive.google.com/file/d/1c-LJV2TUvaGes3ygd0s-gGwLL-rckJGQ/view?usp=sharing"
                 target="_blank"
                 className="text-cyan-500 flex items-center gap-2"
               >
@@ -111,7 +111,9 @@ function App() {
             <div className="space-y-6">
               <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-4 rounded-xl border border-gray-700">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                  <h3 className="text-lg font-medium text-white">CronLabs</h3>
+                  <h3 className="text-lg font-medium text-white">
+                    CronLab Technologies
+                  </h3>
                   <span className="text-sm text-gray-400">Kolkata, WB</span>
                 </div>
                 <div className="flex items-center justify-between mb-3">
@@ -130,6 +132,11 @@ function App() {
                     Crafted clean landing pages for local businesses using
                     Next.js and Tailwind CSS, improving user engagement and
                     reducing page load times
+                  </li>
+                  <li>
+                    Conducted Lighthouse audits to identify and fix performance,
+                    accessibility, and SEO issues, achieving performance scores
+                    above 90 across deployed pages
                   </li>
                   <li>
                     Dockerized a Node.js application by designing and optimizing
@@ -371,7 +378,7 @@ function App() {
                       Node.js
                     </span>
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
-                      C++
+                      Python - FastAPI
                     </span>
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       WebSocket
@@ -392,6 +399,9 @@ function App() {
                       MongoDB
                     </span>
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
+                      Redis
+                    </span>
+                    <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       Prisma
                     </span>
                   </div>
@@ -404,7 +414,7 @@ function App() {
                   </h3>
                   <div className="flex flex-wrap gap-1.5">
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
-                      Git
+                      Git CI/CD
                     </span>
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       Docker
@@ -414,6 +424,12 @@ function App() {
                     </span>
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       MonoRepo
+                    </span>
+                    <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
+                      Prometheus
+                    </span>
+                    <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
+                      Grafana
                     </span>
                   </div>
                 </div>
