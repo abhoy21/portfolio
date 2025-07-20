@@ -1,6 +1,6 @@
-import { Github, Linkedin } from "lucide-react";
-import GitHubCalendar from "react-github-calendar";
-import { Analytics } from "@vercel/analytics/react";
+import { Github, Linkedin } from 'lucide-react';
+import GitHubCalendar from 'react-github-calendar';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -81,7 +81,7 @@ function App() {
             {/* <p>• Currently exploring Go</p> */}
             <p>• Let's talk how we can work together!</p>
             <p className="flex items-center gap-2">
-              • You can have a look at my{" "}
+              • You can have a look at my{' '}
               <a
                 href="https://drive.google.com/file/d/1c-LJV2TUvaGes3ygd0s-gGwLL-rckJGQ/view?usp=sharing"
                 target="_blank"
@@ -383,6 +383,12 @@ function App() {
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       WebSocket
                     </span>
+                    <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
+                      Nestjs
+                    </span>
+                    <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
+                      Express JS
+                    </span>
                   </div>
                 </div>
 
@@ -425,12 +431,12 @@ function App() {
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       MonoRepo
                     </span>
-                    <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
+                    {/* <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       Prometheus
                     </span>
                     <span className="text-xs px-2 py-1 bg-neutral-700/50 rounded-lg text-gray-300">
                       Grafana
-                    </span>
+                    </span> */}
                   </div>
                 </div>
 
