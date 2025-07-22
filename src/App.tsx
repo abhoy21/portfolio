@@ -15,13 +15,13 @@ function App() {
             </h1>
             <div className="flex flex-wrap items-center gap-4">
               <div className="flex items-center gap-4">
-                <a
+                {/* <a
                   href="https://www.linkedin.com/in/abhoy-sarkar/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Linkedin className="w-4 h-4 text-blue-500 hover:text-white transition-colors" />
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/abhoy21"
                   target="_blank"
