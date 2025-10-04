@@ -1,4 +1,4 @@
-import { Github, Linkedin } from 'lucide-react';
+import { Github } from 'lucide-react';
 import GitHubCalendar from 'react-github-calendar';
 import { Analytics } from '@vercel/analytics/react';
 
@@ -109,40 +109,67 @@ function App() {
           <div className="my-12">
             <h2 className="text-xl font-bold text-white mb-4">Experience</h2>
             <div className="space-y-6">
-              <div className=" bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-4 rounded-xl border border-gray-700">
+              <div className="bg-gradient-to-br from-neutral-950 via-neutral-900/40 to-neutral-950 p-4 rounded-xl border border-gray-700">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                  <h3 className="text-lg font-medium text-white">
-                    CronLab Technologies
-                  </h3>
+                  <h3 className="text-lg font-medium text-white">Giftlaya</h3>
                   <span className="text-sm text-gray-400">Kolkata, WB</span>
                 </div>
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-sm text-cyan-400">SDE Intern</span>
                   <span className="text-xs text-gray-500">
-                    January 2025 – March 2025
+                    May 2025 – August 2025
                   </span>
                 </div>
                 <ul className="space-y-2 pl-5 list-disc text-sm text-gray-400">
                   <li>
-                    Implemented responsive UI components using Next.js and
-                    TypeScript within a Monorepo architecture, enhancing
-                    development scalability across 3+ internal tools
+                    Designed and engineered a{' '}
+                    <span className="text-white font-medium">
+                      scalable database schema
+                    </span>
+                    for the <span className="italic">giftlaya-seller</span>{' '}
+                    platform using Prisma ORM, incorporating
+                    <span className="text-white font-medium">
+                      {' '}
+                      efficient indexing strategies
+                    </span>{' '}
+                    that optimized query performance by{' '}
+                    <span className="text-white font-medium">20%</span>
                   </li>
                   <li>
-                    Crafted clean landing pages for local businesses using
-                    Next.js and Tailwind CSS, improving user engagement and
-                    reducing page load times
+                    Revamped the entire website UI using Next.js and Tailwind
+                    CSS, resulting in a measurable{' '}
+                    <span className="text-white font-medium">
+                      increase in user signups
+                    </span>
+                    and improved{' '}
+                    <span className="text-white font-medium">
+                      user retention rates
+                    </span>
                   </li>
                   <li>
-                    Conducted Lighthouse audits to identify and fix performance,
-                    accessibility, and SEO issues, achieving performance scores
-                    above 90 across deployed pages
+                    Programmed and secured{' '}
+                    <span className="text-white font-medium">
+                      efficient and reliable REST APIs
+                    </span>
+                    using NestJS, reducing average response size by
+                    <span className="text-white font-medium"> 10%</span> and
+                    improving response times for
+                    <span className="text-white font-medium">
+                      {' '}
+                      faster data delivery
+                    </span>
                   </li>
                   <li>
-                    Dockerized a Node.js application by designing and optimizing
-                    Dockerfiles, significantly reducing image size and build
-                    time, thereby streamlining CI/CD workflows and enhancing
-                    deployment efficiency
+                    Enhanced the{' '}
+                    <span className="text-white font-medium">
+                      checkout workflow
+                    </span>{' '}
+                    by resolving performance bottlenecks and refining UI/UX,
+                    contributing to a
+                    <span className="text-white font-medium">
+                      {' '}
+                      higher order conversion rate
+                    </span>
                   </li>
                 </ul>
               </div>
