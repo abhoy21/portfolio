@@ -83,7 +83,7 @@ function App() {
             <p className="flex items-center gap-2">
               • You can have a look at my{' '}
               <a
-                href="https://drive.google.com/file/d/1c-LJV2TUvaGes3ygd0s-gGwLL-rckJGQ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1xWa-NjprYyaIU_TGWh_3RB2bctahn6aI/view?usp=sharing"
                 target="_blank"
                 className="text-cyan-500 flex items-center gap-2"
               >
