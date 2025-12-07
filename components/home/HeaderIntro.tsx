@@ -1,8 +1,8 @@
 "use client";
 
+import { File, FileText, Github } from "lucide-react";
 import Link from "next/link";
-import { FileText, Github, File } from "lucide-react";
-import { Tooltip, TooltipTrigger, TooltipContent } from "../ui/tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 export default function HeaderIntro() {
   return (
@@ -57,7 +57,7 @@ export default function HeaderIntro() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="https://drive.google.com/file/d/1xWa-NjprYyaIU_TGWh_3RB2bctahn6aI/view"
+                  href="https://drive.google.com/file/d/12DPLZAQH48OhS54fXBplmp_1Ff5lJiXp/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 px-4 py-2 bg-foreground rounded-lg hover:border-muted-foreground/50 text-sm text-background transition-all duration-300 hover:shadow-sm flex items-center justify-center gap-2"
