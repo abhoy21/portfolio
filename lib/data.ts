@@ -111,7 +111,7 @@ MindSketch was built to solve a key collaboration problem: most diagramming tool
       "Tailwind CSS",
       "Azure",
     ],
-    link: "https://github.com/abhoy21/mindsketch.git",
+    link: "https://youtu.be/amt7cD9BEAA",
     github: "https://github.com/abhoy21/mindsketch.git",
     year: "2024",
   },
