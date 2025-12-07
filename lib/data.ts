@@ -27,11 +27,11 @@ export interface BlogPost {
 
 export const projects: Project[] = [
   {
-  slug: "pixel-art-editor",
-  name: "Pixel Art Editor — Minecraft-Style Pixel Art Canvas",
-  description:
-    "A lightweight, browser-based pixel art editor optimized for creating Minecraft-style sprites and profile pictures. Built with a fast, keyboard-friendly canvas interface using Next.js, Tailwind, and shadcn UI, and deployed seamlessly on Vercel.",
-  longDescription: `
+    slug: "pixel-art-editor",
+    name: "Pixel Art Editor — Minecraft-Style Pixel Art Canvas",
+    description:
+      "A lightweight, browser-based pixel art editor optimized for creating Minecraft-style sprites and profile pictures. Built with a fast, keyboard-friendly canvas interface using Next.js, Tailwind, and shadcn UI, and deployed seamlessly on Vercel.",
+    longDescription: `
 Pixel Art Editor was built to offer a simple yet powerful way to create Minecraft-style pixel art directly in the browser. Most pixel editors are either overloaded with features or lack the crisp, grid-perfect interaction needed for game-style pixel creation. This project focuses on speed, clarity, and creator friendliness — letting users sketch pixel art avatars and sprites with zero learning curve.
 
 **Key Challenges**
@@ -57,18 +57,18 @@ Pixel Art Editor was built to offer a simple yet powerful way to create Minecraf
 - Reduced friction for hobbyist artists by keeping all functionality in the browser — no installs required.
 - Provided a simple tool for prototyping Minecraft-style sprites for personal or game-mod projects.
 `,
-  tech: [
-    "Next.js",
-    "Tailwind CSS",
-    "shadcn/ui",
-    "TypeScript",
-    "Vercel",
-    "Canvas API"
-  ],
-  link: "https://pixel-art-editor-chi.vercel.app/",
-  github: "https://github.com/abhoy21/pixel-art-editor.git",
-  year: "2025",
-},
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "TypeScript",
+      "Vercel",
+      "Canvas API",
+    ],
+    link: "https://pixel-art-editor-chi.vercel.app/",
+    github: "https://github.com/abhoy21/pixel-art-editor.git",
+    year: "2025",
+  },
   {
     slug: "mindsketch-collaborative-diagramming",
     name: "MindSketch — Real-time Collaborative Diagramming",
@@ -110,6 +110,7 @@ MindSketch was built to solve a key collaboration problem: most diagramming tool
       "Turborepo",
       "Tailwind CSS",
       "Azure",
+      "CI/CD Pipelines",
     ],
     link: "https://youtu.be/amt7cD9BEAA",
     github: "https://github.com/abhoy21/mindsketch.git",
@@ -144,13 +145,7 @@ WriteX was designed to eliminate the inconsistent, slow content production proce
 - Reduced average writing time from 25 minutes to 7 - 10 minutes.
 - 20+ niche templates used over 3,000+ times in testing.
 `,
-    tech: [
-      "Next.js",
-      "Next-Auth",
-      "Gemini AI",
-      "Tailwind CSS",
-      "Shadcn UI",
-    ],
+    tech: ["Next.js", "Next-Auth", "Gemini AI", "Tailwind CSS", "Shadcn UI"],
     link: "https://writex-sand.vercel.app/dashboard",
     github: "https://github.com/abhoy21/writex.git",
     year: "2024",

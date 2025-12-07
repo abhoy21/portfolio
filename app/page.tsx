@@ -1,11 +1,11 @@
 
+import ConnectSection from "@/components/home/ConnectSection";
+import FooterMain from "@/components/home/FooterMain";
 import HeaderIntro from "@/components/home/HeaderIntro";
+import HomeClient from "@/components/home/HomeClient";
 import JobItem from "@/components/home/JobItem";
 import ProjectsList from "@/components/home/ProjectsList";
 import ThoughtsList from "@/components/home/ThoughtsList";
-import ConnectSection from "@/components/home/ConnectSection";
-import FooterMain from "@/components/home/FooterMain";
-import HomeClient from "@/components/home/HomeClient";
 
 export default function Home() {
 
@@ -75,7 +75,7 @@ export default function Home() {
         "Tailwind CSS",
         "Azure",
       ],
-      link: "https://mindsketch.abhoy.xyz/",
+      link: "https://youtu.be/amt7cD9BEAA",
       year: "2025",
       slug: "mindsketch-collaborative-diagramming",
     },
