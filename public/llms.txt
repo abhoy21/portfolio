@@ -61,6 +61,10 @@ I write technical articles covering:
 
 ## Recent Blog Posts
 
+
+- "CVE-2025-55182 Explained: How a Prototype Pollution Flaw in React Server Functions Led to Critical RCE
+- "Secure Cookie-Based Authentication in TypeScript Backends: Why You Should Avoid LocalStorage and Use HTTP-Only Cookies for Access & Refresh Tokens
+- "The Rise of Coding Agents: Will Developers Become AI Supervisors Instead of Coders?
 - "Building Intelligent RAG Pipelines with LangGraph and FastAPI" (July 2025)
 - "Secure Cookie-Based Authentication in TypeScript Backends" (December 2025)
 - "Mastering JavaScript Closures" (July 2025)

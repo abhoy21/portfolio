@@ -2123,6 +2123,147 @@ In five years, will manual coding feel as outdated as writing assembly does toda
 The answer depends on how willingly we embrace this new era, and how thoughtfully we implement it.
 `,
   },
+{
+  id: "12",
+  slug: "cve-2025-55182-react-server-functions-rce",
+  title:
+    "CVE-2025-55182 Explained: How a Prototype Pollution Flaw in React Server Functions Led to Critical RCE",
+  excerpt:
+    "A deep yet accessible breakdown of CVE-2025-55182 — a critical Remote Code Execution flaw in React Server Functions affecting frameworks like Next.js. Learn what CVEs are, how this vulnerability works, why it threatens real-world applications, and what developers must do to stay secure.",
+  date: "December 2025",
+  readTime: "10 min",
+  tags: [
+    "Security",
+    "React",
+    "Next.js",
+    "RCE",
+    "CVE",
+    "Web Application Security",
+  ],
+  featured: true,
+  content: `
+# CVE-2025-55182 Explained: How a Prototype Pollution Flaw in React Server Functions Led to Critical RCE
+
+In late 2025, the JavaScript ecosystem faced one of its most severe security issues in recent years: **CVE-2025-55182**, a remote code execution vulnerability affecting **React Server Functions**, and by extension, frameworks like **Next.js 14+ and some versions of 15**.
+
+What makes this vulnerability particularly alarming is its simplicity,  **an attacker could trigger RCE during the deserialization stage**, before the server even checks whether the incoming request targets a valid action.
+
+If your application used React Server Actions (or Server Functions) and accepted multipart form-data, you were potentially exposed.
+
+This post breaks down what CVE-2025-55182 really is, how CVEs work, how this specific flaw threatens modern full-stack JavaScript apps, and what you must do to secure your systems.
+
+---
+
+## What Is a CVE?
+
+A **CVE (Common Vulnerabilities and Exposures)** is an industry-standard identifier assigned to publicly known security vulnerabilities.
+
+Each CVE includes:
+
+- A unique ID (e.g., **CVE-2025-55182**)  
+- A description of the vulnerability  
+- Its severity  
+- References to public advisories, patches, or exploits  
+
+CVE-2025-55182 is classified as a **critical** vulnerability because it allows **remote code execution**.
+
+---
+
+## Understanding the Threat: Why CVE-2025-55182 Is So Dangerous
+
+React Server Functions rely on an internal serialization mechanism called the **React Flight Protocol**.
+
+The vulnerability arose because React **failed to validate whether referenced properties in incoming deserialization chunks were safe**, enabling **prototype pollution**.
+
+Attackers could manipulate:
+
+- Object prototypes  
+- Promise/thenable behavior  
+- React’s deserialization chain  
+
+This enabled attackers to execute arbitrary code on the server **without authentication**.
+
+---
+
+## How the Vulnerability Worked (Simplified)
+
+### 1. React deserialized “chunks” sent by the client, but it didn't validate whether referenced keys were safe. This is the vulnerability.
+
+### 2. Attackers supplied magic prototype keys:
+
+\`__proto__\`  
+\`constructor\`  
+\`constructor()\`
+
+### 3. React awaited malicious thenables  
+Any object with a \`.then()\` method is automatically awaited.
+
+### 4. Attackers injected the Function constructor  
+Like: \`Function("process.mainModule.require('child_process').execSync('rm -rf /')")\`
+
+React executed it, full RCE.
+
+---
+
+## Real-World Impact
+
+Affected:
+- Next.js apps with Server Actions  
+- Any server accepting multipart/form-data  
+- Any environment where form uploads reached React Server Functions  
+
+Consequences:
+
+- Full server takeover  
+- Credential theft  
+- Supply chain compromise  
+- Database extraction  
+
+---
+
+## The Fixes
+
+### ✔️ Prototype key validation  
+Unsafe keys are rejected.
+
+### ✔️ Hardened deserialization  
+Better reference validation and type safety.
+
+### ✔️ Sandboxing  
+Prevent access to global constructors.
+
+### ✔️ Early action validation  
+Server checks action *before* deserializing inputs.
+
+---
+
+## Protect Your App
+
+1. **Update React and Next.js immediately**  
+2. Add WAF rules blocking  
+   - \`__proto__\`  
+   - \`constructor\`  
+   - \`$@\`  
+3. Disable Server Actions where unnecessary  
+4. Sanitize all multipart/form-data  
+5. Rotate secrets if your app was exposed  
+
+---
+
+## Final Thoughts
+
+CVE-2025-55182 is a reminder that modern full-stack frameworks blur the line between client data and server behavior, making strict validation essential.
+
+JavaScript’s prototype system remains powerful but dangerous when mishandled.  
+React’s patches significantly improve safety, but developers must remain vigilant.
+
+---
+
+**Source:**  
+Original research & PoC by msanft (GitHub: https://github.com/msanft/CVE-2025-55182.git).
+`,
+},
+
 ];
 
 
