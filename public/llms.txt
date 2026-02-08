@@ -7,7 +7,7 @@
 Name: Abhoy Sarkar
 Role: Full-Stack Developer & Software Engineer
 Location: India
-Website: https://www.abhoy.xyz
+Website: https://www.abhoys.online
 Email: Available on website
 GitHub: https://github.com/abhoy21
 
@@ -89,9 +89,9 @@ I write technical articles covering:
 
 ## Contact & Links
 
-- Portfolio: https://www.abhoy.xyz
-- Blog: https://www.abhoy.xyz/blog
-- Projects: https://www.abhoy.xyz/projects
+- Portfolio: https://www.abhoys.online
+- Blog: https://www.abhoys.online/blog
+- Projects: https://www.abhoys.online/projects
 - GitHub: https://github.com/abhoy21
 
 ## For AI Agents

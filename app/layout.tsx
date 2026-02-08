@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Abhoy Sarkar",
-      url: "https://abhoy.xyz",
+      url: "https://abhoys.online",
     },
   ],
   creator: "Abhoy Sarkar",
@@ -43,14 +43,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.abhoy.xyz"),
+  metadataBase: new URL("https://www.abhoys.online"),
   alternates: {
-    canonical: "https://www.abhoy.xyz",
+    canonical: "https://www.abhoys.online",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.abhoy.xyz",
+    url: "https://www.abhoys.online",
     siteName: "Abhoy Sarkar Portfolio",
     title:
       "Abhoy Sarkar — Software Developer (Typescript, Go, Next.js, Node.js, Postgresql)",
@@ -104,7 +104,7 @@ export default function RootLayout({
 }>) {
   const personSchema = generateStructuredData("person", {
     name: "Abhoy Sarkar",
-    url: "https://www.abhoy.xyz",
+    url: "https://www.abhoys.online",
     email: "sarkar.ab07@gmail.com",
     sameAs: [
       "https://github.com/abhoy21",
@@ -115,7 +115,7 @@ export default function RootLayout({
 
   const websiteSchema = generateStructuredData("website", {
     name: "Abhoy Sarkar Portfolio",
-    url: "https://www.abhoy.xyz",
+    url: "https://www.abhoys.online",
     description: "Portfolio of Abhoy Sarkar, a Software Developer.",
     authorName: "Abhoy Sarkar",
   });

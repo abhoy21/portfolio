@@ -1,7 +1,7 @@
 // SEO utilities and metadata generation
 export function generateProjectMetadata(project: any) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://www.abhoy.xyz";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://www.abhoys.online";
   const url = `${baseUrl}/projects/${project.slug}`;
 
   return {
@@ -34,7 +34,7 @@ export function generateProjectMetadata(project: any) {
 
 export function generateBlogMetadata(post: any) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://www.abhoy.xyz";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://www.abhoys.online";
   const url = `${baseUrl}/blog/${post.slug}`;
 
   return {
@@ -78,7 +78,7 @@ export function generateStructuredData(
   data: any,
 ) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://www.abhoy.xyz";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://www.abhoys.online";
 
   if (type === "project") {
     return {
